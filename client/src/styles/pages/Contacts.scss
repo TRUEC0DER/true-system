@@ -1,0 +1,12 @@
+.contacts {
+  display: grid;
+  justify-content: center;
+  min-height: var(--HEIGHT);
+  align-items: center;
+
+  .content {
+    display: grid;
+    text-align: center;
+    gap: 12px
+  }
+}

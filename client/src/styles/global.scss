@@ -1,0 +1,147 @@
+main {
+  min-height: calc(100vh - 75px);
+  box-sizing: border-box;
+  margin: 24px;
+}
+
+body {
+  color: hsl(var(--PM-50));
+}
+
+* {
+  scrollbar-color: hsl(var(--PM-700)) hsl(var(--PM-800));
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  transition: none;
+}
+
+.block {
+  border: hsl(var(--PM-800)) 1px solid;
+  padding: 12px;
+  margin: 0;
+  background-color: hsl(var(--PM-900));
+  border-radius: var(--BR);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--PM-800));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--PM-700));
+}
+
+// h1, h2, h3, h4, h5
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 7px;
+  font-weight: 600;
+}
+
+// ----- //
+
+// p, p-small, p-big
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+
+  &[class="p-small"] {
+    font-size: 7px;
+  }
+
+  &[class="p-big"] {
+    font-size: 21px;
+  }
+}
+
+// ----- //
+
+// a
+
+a {
+  transition: .25s ease;
+  border-radius: var(--BR);
+  padding: 6px 6px;
+  font-family: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  color: hsl(var(--SC-0));
+  background-color: hsla(255, 255, 255, 0);
+
+  &[class="a-primary"] {
+    color: hsl(var(--PM-0));
+  }
+
+  &[class="a-secondary"] {
+    color: hsl(var(--SC-0));
+  }
+
+  &:hover {
+    background-color: hsla(var(--PM-50), 0.10);
+  }
+}
+
+a[class="a-primary a-button"] {
+  background-color: hsl(var(--PM-0));
+  color: hsl(var(--PM-800));
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 14px;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+a[class="a-secondary a-button"] {
+  background-color: hsl(var(--PM-800));
+  color: hsl(var(--PM-0));
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 14px;
+
+  &:hover {
+    filter: brightness(115%);
+  }
+}
+
+// -----
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 600;
+}
+
+.block {
+  background-color: hsl(var(--PM-900));
+  border-radius: var(--BR);
+  padding: 24px 24px;
+}

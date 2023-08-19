@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+  width: 100%;
+  min-height: 75px;
+  align-items: center;
+  border-top: hsl(var(--PM-800)) 1px solid;
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1;
+    margin-left: 24px;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .right {
+    display: flex;
+    flex: 1 1;
+    margin-right: 24px;
+    text-align: right;
+    justify-content: flex-end;
+    gap: 24px
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    display: grid;
+    padding: 12px;
+    justify-content: center;
+    gap: 12px;
+
+    .left, .center, .right {
+      display: grid;
+      text-align: center;
+      gap: 12px;
+      margin: 0;
+      justify-content: center;
+    }
+  }
+}

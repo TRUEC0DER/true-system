@@ -1,0 +1,34 @@
+.toggle-disabled {
+  background-color: hsl(var(--PM-800));
+  width: 50px;
+  padding: 3px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  .circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(var(--SC-0));
+    transition: .25s ease;
+  }
+}
+
+.toggle-enabled {
+  background-color: hsl(var(--PM-800));
+  width: 50px;
+  padding: 3px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  .circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(var(--PM-0));
+    transform: translateX(25px);
+    transition: .25s ease;
+  }
+}

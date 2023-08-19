@@ -1,0 +1,36 @@
+.purchase {
+  .content {
+    display: grid;
+    margin: 24px;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+
+    .product-cards {
+      display: grid;
+      width: calc(100vw - 8px);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+      .block {
+        display: grid;
+        cursor: pointer;
+        justify-content: center;
+        margin: 12px;
+        gap: 12px;
+        transition: background-color .25s;
+
+        .price {
+          background-color: hsla(var(--PM-0), 0.1);
+          padding: 12px 24px;
+          border-radius: var(--BR);
+          border: hsla(var(--PM-0), 0.2) 1px solid;
+          color: hsl(var(--PM-0))
+        }
+
+        &:hover {
+          background-color: hsla(var(--PM-800), 0.3);
+        }
+      }
+    }
+  }
+}

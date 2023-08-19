@@ -1,0 +1,20 @@
+.success {
+  .content {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+
+    .status {
+      justify-content: center;
+      display: grid;
+      background-color: hsl(var(--SUCCESS));
+      border-radius: var(--BR);
+
+      img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+  }
+}

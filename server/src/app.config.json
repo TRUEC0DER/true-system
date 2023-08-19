@@ -1,0 +1,63 @@
+{
+  "anypay": {
+    "secret_key": "1234567890",
+    "merchant_id": 1234,
+    "url": "https://anypay.io/merchant",
+    "allow_ips": [
+      "185.162.128.38",
+      "185.162.128.39",
+      "185.162.128.88"
+    ],
+    "success_url": "https://example.com/success",
+    "fail_url": "https://example.com/fail"
+  },
+  "database": {
+    "mongodb": {
+      "url": "mongodb+srv://admin:password@ip/database?retryWrites=true&w=majority"
+    }
+  },
+  "products": [
+    {
+      "id": 0,
+      "name": "Pass (100 days)",
+      "info": "Season pass (100 days)",
+      "price": 100,
+      "servers": [
+        {
+          "ip": "server-ip.com",
+          "port": 25575,
+          "password": "server-password",
+          "commands": ["whitelist add %nickname%", "say %nickname% purchased a pass"]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Example Product",
+      "info": "Just a example product",
+      "price": 1000,
+      "servers": [
+        {
+          "ip": "server-ip.com",
+          "port": 25575,
+          "password": "server-password",
+          "commands": ["whitelist add %nickname%", "say %nickname% purchased a example product"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Second example product",
+      "info": "Just a second example product",
+      "price": 10,
+      "servers": [
+        {
+          "ip": "server-ip.com",
+          "port": 25575,
+          "password": "828adcBlbZ5gtN76",
+          "commands": ["whitelist add %nickname%", "say %nickname% purchased a second example product"]
+        }
+      ]
+    }
+  ]
+}

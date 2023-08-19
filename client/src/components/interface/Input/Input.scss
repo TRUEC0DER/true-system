@@ -1,0 +1,34 @@
+input {
+  padding: 12px 24px;
+  font-family: inherit;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: var(--BR);
+  background: none;
+  outline: none;
+  color: hsl(var(--SC-0));
+
+  &[class="input-secondary"] {
+    border: hsl(var(--PM-800)) solid 1px;
+    transition: .15s ease;
+
+    &:hover {
+      border: hsl(var(--PM-700)) solid 1px;
+    }
+
+  }
+
+  &[class="input-primary"] {
+    border: hsl(var(--PM-800)) solid 1px;
+    transition: .15s ease;
+
+    &:hover {
+      border: hsl(var(--PM-700)) solid 1px;
+    }
+
+    &:active, &:focus {
+      border: hsl(var(--PM-0)) solid 1px;
+    }
+  }
+}

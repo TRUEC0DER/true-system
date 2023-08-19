@@ -1,0 +1,17 @@
+select {
+  padding: 12px 24px;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: var(--BR);
+  background-color: hsl(var(--PM-800));
+  outline: none;
+  transition: .15s ease;
+  color: hsl(var(--SC-0));
+
+  &:hover {
+    background-color: hsl(var(--PM-700));
+  }
+}

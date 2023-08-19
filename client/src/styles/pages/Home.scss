@@ -1,0 +1,42 @@
+.home {
+  .block {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin: 24px;
+    gap: 24px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+
+    .content {
+      display: grid;
+      text-align: center;
+      margin-top: 48px;
+      gap: 24px;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+      }
+
+      img {
+        height: 140px;
+        width: 140px;
+        object-fit: cover;
+        animation: 5s linear 0s normal none infinite running moon;
+      }
+    }
+  }
+}
+
+@keyframes moon {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
