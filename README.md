@@ -11,5 +11,5 @@ Written using NestJS and MongoDB. Payment system - AnyPay.
 Products are issued using RCON.
 
 **More information**:
-- [Client site (Clickable)](https://github.com/TRUEC0DER/true-system/tree/main/client/README.md "Client site (Clickable)")
-- [Server site (Clickable)](https://github.com/TRUEC0DER/true-system/tree/main/server/README.md "Server site (Clickable)")
+- [Client site](https://github.com/TRUEC0DER/true-system/tree/main/client/README.md "Client site (Clickable)")
+- [Server site](https://github.com/TRUEC0DER/true-system/tree/main/server/README.md "Server site (Clickable)")
